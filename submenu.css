@@ -1,0 +1,33 @@
+
+.menu .menu1{
+    cursor: pointer;
+}
+
+.menu li{
+    display: block; width: 80px; padding: 5px 10px;
+    background: none; text-align: center; position: relative;
+}
+
+.menu li ul{
+    display: none; position: absolute;
+    top: 30px; left: 0;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li{
+    display: inline-block; width: 100px; padding: 5px 10px;
+    background: none; text-align: center;   
+}
+
+.menu li ul li:hover{
+    background: rgba(175, 171, 171, 0.872);
+}
+
+.menu li ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Helvetica';
+}

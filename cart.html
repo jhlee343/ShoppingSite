@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="js svg flexbox csstransforms">
+<head>
+	<meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aighta</title> 
+    <link href="cart.css" rel="stylesheet">
+    <script type="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    	// var itemName = getParameter("itemName");
+    	
+    </script>
+</head>
+	<body class="template-cart">
+        <div class="container">
+			<div class="header">
+				<h1><a href="index.html">Aighta</a></h1>
+				<h2>Design Yourself with Aigtha</h2>
+				<ul>
+					<li class="info"><a href="infomation-my.html"><img src="images/info_24px.png"></a></li>
+					<li class="bag"><a href="cart.html"><img src="images/bag_24px.png"></a></li>
+					<li class="menu1">
+						<a><img src="images/list_icon_24px.png"></a>
+						<ul class="submenu">
+							<li><a href="#">NEW ITEM</a></li>
+							<li><a href="#">ALL ITEMS</a></li>
+							<li><a href="#">CATEGORY</a></li>
+							<li><a href="#">SALE</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div class="content">
+        	<h4></h4>
+    	</div>
+		<div class="page-container drawer-page-content" id="PageContainer">
+			<main class="main-content" id="MainContent" role="main">
+				<div id="site-section-cart-template" class="site-section">
+					<div class="page-width" data-section-id="cart-template" data-section-type="cart-template">
+
+<!-- 						<div class="empty-page-content text-center">
+      						<h1>Your cart</h1>
+      						<p class="cart--empty-message">Your cart is currently empty.</p>
+      						<div class="cookie-message">
+        						<p>Enable cookies to use the shopping cart</p>
+      						</div>
+      						<a href="/" class="btn btn--has-icon-after cart__continue-btn">
+      							Continue shopping
+								<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 20 8">
+									<path d="M15.186.445c.865.944 1.614 1.662 2.246 2.154.631.491 1.227.857 1.787 1.098v.44a9.933 9.933 0 0 0-1.875 1.196c-.606.485-1.328 1.196-2.168 2.134h-.752c.612-1.309 1.253-2.315 1.924-3.018H.77v-.986h15.577c-.495-.632-.84-1.1-1.035-1.406-.196-.306-.486-.843-.87-1.612h.743z" fill="#000" fill-rule="evenodd"></path>
+								</svg>
+							</a>
+    					</div> -->
+
+						<div class="section-header text-center">
+							<h1>Your cart</h1>
+						</div>
+						<form action="/cart?locale=en" method="post" novalidate class="cart">
+							<table>
+								<thead class="cart__row cart__header">
+									<tr>
+										<th colspan="2">Product</th>
+										<th>Price</th>
+										<th class="text-center">Quantity</th>
+										<th class="text-right">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="cart__row border-bottom line1 cart-flex border-top">
+              							<td class="cart__image-wrapper cart-flex-item">
+                							<a href="item.html">
+                								<div id="x"></div>
+                								<script>
+                									var url_href = window.location.href;
+
+                   									var url = new URL(url_href);
+                   									var c = url.searchParams.get("image");
+                   									var d = document.createElement("img");
+                   									var div = document.getElementById("x");
+                   									d.src = c;
+                   									// d.style.width = '95px';
+                   									// d.style.height = '95px';
+                   									d.alt = 'JavaScriptImage';
+                   									div.appendChild(d);
+                   									// document.write(d);
+                								</script>
+<!--                   								<img class="cart__image" src="//cdn.shopify.com/s/files/1/2207/7957/products/4691-01_95x95@2x.jpg?v=1614935611" alt="1998 COMME des GARCONS"> -->
+               								 </a>
+             							</td>
+             							<td class="cart__meta small--text-left cart-flex-item">
+                							<div id="data" class="list-view-item__title">
+                  								<a href="item.html">
+                   									 <script>
+                   									 	var url_href = window.location.href;
+
+                   									 	var url = new URL(url_href);
+                   									 	var a = url.searchParams.get("itemName");
+                   									 	document.write(a);
+                   									 </script>
+                    
+                  								</a>
+                							</div>
+               								 <p class="small--hide">
+                  								<a href="/cart/change?line=1&amp;quantity=0" class="btn btn--small btn--secondary cart__remove">Remove</a>
+                							</p>
+              							</td>
+             							<td class="cart__price-wrapper cart-flex-item">
+               								        <script>
+                   									 	var url_href = window.location.href;
+
+                   									 	var url = new URL(url_href);
+                   									 	var b = url.searchParams.get("price");
+                   									 	document.write(b);
+                   									</script>
+                							<span class="LS_converted_currencies " data-default="$130.00" data-usd="$130.00" data-eur="€116.83" data-gbp="£99.84" data-jpy="¥14,279.46" data-krw="₩150,563.41" data-cny="¥897.17">&nbsp;</span>
+<!-- 	                						<div class="cart__edit medium-up--hide">
+	                  							<button type="button" class="btn btn--secondary btn--small js-edit-toggle cart__edit--active" data-target="line1">
+	                    							<span class="cart__edit-text--edit">Edit</span>
+	                    							<span class="cart__edit-text--cancel">Cancel</span>
+						                  		</button>
+						               		</div> -->
+            							</td>
+	              						<td class="cart__update-wrapper cart-flex-item text-right">
+	                						<a href="/cart/change?line=1&amp;quantity=0" class="btn btn--small btn--secondary cart__remove medium-up--hide">Remove</a>
+	                						<div class="cart__qty">
+	                 							<label for="updates_18601368092769:d5040735cc35551d954b0ec6adf71030" class="cart__qty-label">Quantity</label>
+	                  							<input class="cart__qty-input" type="number" name="updates[]" id="updates_18601368092769:d5040735cc35551d954b0ec6adf71030" value="1" min="0" pattern="[0-9]*">
+	                						</div>
+	                						<input type="submit" name="update" class="btn btn--small cart__update medium-up--hide" value="Update">
+	             						</td>
+	              						<td class="text-right small--hide">
+	                						<div>
+	                  							    <script>
+                   									 	var url_href = window.location.href;
+
+                   									 	var url = new URL(url_href);
+                   									 	var b = url.searchParams.get("price");
+                   									 	document.write(b);
+                   									</script>
+	                  							<span class="LS_converted_currencies " data-default="$130.00" data-usd="$130.00" data-eur="€116.83" data-gbp="£99.84" data-jpy="¥14,279.46" data-krw="₩150,563.41" data-cny="¥897.17">&nbsp;</span>
+	                						</div> 
+	             			 			</td>
+            						</tr>
+									<!-- </tr> -->
+								</tbody>
+							</table>
+							<footer class="cart__footer">
+					        <div class="grid">					        
+					          <div class="grid__item text-right small--text-center">
+					            <div>
+					              <span class="cart__subtotal-title">Subtotal</span>
+					              <span class="cart__subtotal">
+					              		            <script>
+                   									 	var url_href = window.location.href;
+
+                   									 	var url = new URL(url_href);
+                   									 	var b = url.searchParams.get("price");
+                   									 	document.write(b);
+                   									</script>
+					              	<span class="LS_converted_currencies " data-default="$130.00" data-usd="$130.00" data-eur="€116.83" data-gbp="£99.84" data-jpy="¥14,279.46" data-krw="₩150,563.41" data-cny="¥897.17">&nbsp;</span>
+					              </span>
+					            </div>					            
+					            <div class="cart__shipping">Shipping &amp; taxes calculated at checkout</div>
+					            <a href="main.html" class="btn btn--secondary cart__update cart__continue--large small--hide">Continue shopping</a>
+					            <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="Update">
+					            <!-- <input type="submit" name="checkout" class="btn btn--small-wide" value="Check out"> -->
+					            <a href="shipping.html" class="btn btn--small-wide">Check out</a>
+					            <!-- <button class="btn btn--small-wide" type="submit" onclick="location.href='shipping.html'">Check out</button> -->
+					              <!--<div class="additional-checkout-buttons"><div class="dynamic-checkout__content" id="dynamic-checkout-cart" data-shopify="dynamic-checkout-cart"></div></div>-->					            
+					          </div>
+<!-- 					          ::after -->
+					        </div>
+					      </footer>
+						</form>
+<!-- 						::after -->
+					</div>
+				</div>				
+			</main>
+		</div>
+	</body>
+</html>

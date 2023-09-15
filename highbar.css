@@ -1,0 +1,138 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+}
+
+.container{
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.container .header {
+    width: 80%;
+    height: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header ul{
+    margin-top: 15px;
+}
+
+.container .header ul img{
+    margin: 10px;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: black;
+    font-family: abster;
+}
+
+.container .header h2{
+    text-decoration: none;
+    color: black;
+    font-family: abster;
+    text-align: 80px;
+    font-size: 20px;
+    margin-left: 85px;
+}
+
+.container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .nav ul li a:hover{
+    color: darkgray;
+}
+
+input#menu:checked{
+    display: block;
+}
+
+.container .header ul .menu{
+    cursor: pointer;
+}
+
+.container .header ul .menu .submenu{
+    display: none;
+}
+
+.container .header ul .menu .submenu li{
+    display: inline-block; width: 100px;
+}
+
+.container .header ul{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.container .header ul .info{
+    display: inline-block;
+}
+
+.container .header ul .bag{
+    display: inline-block;
+}
+
+.container .header ul .menu1{
+    float: right;
+}
+
+.container .header ul li.menu1{
+    cursor: pointer;
+} 
+/*여기서부터 메뉴 수정*/
+.container .header ul li.menu1{
+    display: inline-block; width: 57.5px;
+    background: none; text-align: center; position: absolute;
+}
+
+.container .header ul li.menu1 ul{
+    display: none; position: absolute;
+    top: 30px; left: 0;
+}
+
+.container .header ul li.menu1:hover ul{
+    display: inline-block;
+}
+
+.container .header ul li.menu1 ul li{
+    display: inline-block; width: 130px; height: 40px;padding: 10px 10px;
+    background: white; text-align: center;
+    border: 1px solid rgb(236, 234, 232);
+}
+
+.container .header ul li.menu1 ul li:hover{
+    background: rgba(227, 224, 224, 0.872);
+    border: 2px solid rgb(236, 234, 232);
+    outline: none;
+    /* border-radius: 20px; */
+}
+
+.container .header ul li.menu1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Helvetica';
+}

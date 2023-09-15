@@ -1,0 +1,281 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+}
+
+.container{
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.container .header {
+    width: 80%;
+    height: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header ul{
+    margin-top: 15px;
+}
+
+.container .header ul img{
+    margin: 10px;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: black;
+    font-family: abster;
+}
+
+.container .header h2{
+    text-decoration: none;
+    color: black;
+    font-family: abster;
+    text-align: 80px;
+    font-size: 20px;
+    margin-left: 85px;
+}
+
+.container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .nav ul li a:hover{
+    color: darkgray;
+}
+
+input#menu:checked{
+    display: block;
+}
+
+.content {
+    margin-top: 1px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 1px solid gainsboro; */
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+    /* background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); */
+}
+
+.content h4 {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 980px; /*740*/
+    text-align: center;
+}
+
+.products img{
+    width: 225px;
+    height: 225px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.products a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+.products a:hover{
+    color: gray;
+}
+
+.price{
+    margin-top: 4px;
+    margin-bottom: 80px;
+}
+
+.container .header ul .menu{
+    cursor: pointer;
+}
+
+.container .header ul .menu .submenu{
+    display: none;
+}
+
+.container .header ul .menu .submenu li{
+    display: inline-block; width: 100px;
+}
+
+.container .header ul{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.container .header ul .info{
+    display: inline-block;
+}
+
+.container .header ul .bag{
+    display: inline-block;
+}
+
+.container .header ul .menu1{
+    float: right;
+}
+
+.container .header ul li.menu1{
+    cursor: pointer;
+} 
+/*여기서부터 메뉴 수정*/
+.container .header ul li.menu1{
+    display: inline-block; width: 57.5px;
+    background: none; text-align: center; position: absolute;
+}
+
+.container .header ul li.menu1 ul{
+    display: none; position: absolute;
+    top: 30px; left: 0;
+}
+
+.container .header ul li.menu1:hover ul{
+    display: inline-block;
+}
+
+.container .header ul li.menu1 ul li{
+    display: inline-block; width: 130px; height: 40px;padding: 10px 10px;
+    background: white; text-align: center;
+    border: 1px solid rgb(236, 234, 232);
+}
+
+.container .header ul li.menu1 ul li:hover{
+    background: rgba(227, 224, 224, 0.872);
+    border: 2px solid rgb(236, 234, 232);
+    outline: none;
+    /* border-radius: 20px; */
+}
+
+.container .header ul li.menu1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Helvetica';
+}
+
+/* footer 영역 */
+#footer{
+    clear: both;
+    width: 100%;
+    height: 80px;
+    background-color: none; 
+    text-align: left;   
+    margin-bottom: 100px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+#footer .under{
+    float: left;
+    width: 50%;
+}
+
+#footer .under .underlist{
+    padding: 32px 0 0 40px;
+    margin-left: 50%;
+}
+
+#footer .under .underlist li{
+    list-style:none;
+}
+
+#footer .under .underlist li a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.68);
+}
+
+#footer .under .underlist .one{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+#footer .under .underlist .two{
+    margin-bottom: 7px;
+}
+#footer .under .underlist .three{
+    margin-bottom: 7px;
+}
+#footer .under .underlist .four{
+    margin-bottom: 7px;
+}
+
+#footer .under .underlist a{
+    color: #999;
+    font-size: 14px;
+}
+
+#footer .under .underlist a:hover{
+    cursor: pointer;
+    color: gainsboro;
+}
+
+#footer .right_under{
+    float: left;
+    width: 35%;
+    padding: 32px 0 0 40px;
+}
+
+#footer .right_under li{
+    list-style: none;
+}
+
+#footer .right_under li a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.68);
+}
+
+#footer .right_under .link .seven{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+#footer .right_under .link .eight{
+    margin-bottom: 7px;
+}
+#footer .right_under .link .nine{
+    margin-bottom: 7px;
+}
+#footer .right_under .linkt .ten{
+    margin-bottom: 7px;
+}
+
+#footer .under .underlist a{
+    color: #999;
+    font-size: 14px;
+}
